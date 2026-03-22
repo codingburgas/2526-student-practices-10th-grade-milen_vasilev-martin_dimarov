@@ -24,12 +24,24 @@
     <ClCompile Include="movies.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="offers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snacks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="menu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="movies.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="offers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snacks.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

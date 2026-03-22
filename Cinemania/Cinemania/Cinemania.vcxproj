@@ -132,10 +132,14 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="movies.cpp" />
+    <ClCompile Include="offers.cpp" />
+    <ClCompile Include="snacks.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="menu.h" />
     <ClInclude Include="movies.h" />
+    <ClInclude Include="offers.h" />
+    <ClInclude Include="snacks.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\StaticLib\StaticLib.vcxproj">

@@ -1,6 +1,8 @@
 #include <iostream>
 #include "menu.h"
 #include "movies.h"
+#include "offers.h"
+#include "snacks.h"
 
 void showMenu() {
     std::cout << R"(
@@ -29,9 +31,17 @@ void showMenu() {
 
     if (num == 1) {
         showMovies();
+
     }
-    else {
+    else if (num == 2) {
+        showOffers();
+    }
+    else if (num == 3) {
+        showSnacks();
+    }
+    else{
         std::cout << "Wrong input!";
     }
+
  
 }
