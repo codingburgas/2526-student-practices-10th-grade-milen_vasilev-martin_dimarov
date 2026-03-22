@@ -1,5 +1,6 @@
+#include <iostream>
 #include "static.h"
 
-int add(int a, int b) {
-    return a + b;
+void clearScreen(){
+    system("cls");
 }

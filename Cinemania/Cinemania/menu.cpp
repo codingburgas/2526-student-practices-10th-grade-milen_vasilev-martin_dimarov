@@ -1,7 +1,6 @@
 #include <iostream>
 #include "menu.h"
-
-#include "static.h"
+#include "movies.h"
 
 void showMenu() {
     std::cout << R"(
@@ -25,11 +24,14 @@ void showMenu() {
 |________________________________________________________________________________________________________________|
 )";
 
-    //this is just a test to see if linked correctly (will delete later)
-    int result = add(3, 4);
-    std::cout << "3 + 4 = " << result << std::endl;
+    int num;
+    std::cin >> num;
 
-    if (result == 7)
-        std::cout << "StaticLib works!" << std::endl;
-
+    if (num == 1) {
+        showMovies();
+    }
+    else {
+        std::cout << "Wrong input!";
+    }
+ 
 }

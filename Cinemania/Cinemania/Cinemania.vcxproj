@@ -131,9 +131,11 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu.cpp" />
+    <ClCompile Include="movies.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="menu.h" />
+    <ClInclude Include="movies.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\StaticLib\StaticLib.vcxproj">
