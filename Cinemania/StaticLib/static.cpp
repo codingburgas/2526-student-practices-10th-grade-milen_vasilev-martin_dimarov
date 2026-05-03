@@ -4,3 +4,4 @@
 void clearScreen(){
     system("cls");
 }
+

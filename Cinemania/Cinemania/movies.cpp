@@ -1,5 +1,6 @@
 #include <iostream>
 #include "movies.h"
+#include <static.h>
 
 using namespace std;
 
@@ -10,7 +11,9 @@ vector<string> movies = {
 };
 
 void showMovies() {
-    cout << "\n==== MOVIES ====\n";
+    clearScreen();
+
+    cout << "\n----- MOVIES -----\n";
 
     for (int i = 0; i < movies.size(); i++) {
         cout << i + 1 << ". " << movies[i] << endl;

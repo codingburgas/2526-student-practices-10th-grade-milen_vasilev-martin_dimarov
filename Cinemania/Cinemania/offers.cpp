@@ -12,6 +12,7 @@ void showOffers()
     cout << "2) Movie + Drink Combo\n";
     cout << "3) Family Pack (4 Tickets + Snacks)\n";
     cout << "4) Date Night (2 Tickets + Popcorn + Drinks)\n";
+    cout << endl;
     cout << "0) Back\n";
     cout << "------------------\n";
 }

@@ -4,9 +4,12 @@
 #include "offers.h"
 #include "snacks.h"
 
+#include <static.h>
+
 using namespace std;
 
 void showMenu() {
+    clearScreen();
 
     int num;
 
@@ -47,11 +50,13 @@ void showMenu() {
         }
     }
 }
-void adminMenu() {
+
+void adminMenu() 
+{
     int choice;
 
     while (true) {
-        cout << "\n==== ADMIN MENU ====\n";
+        cout << "\n----- ADMIN MENU -----\n";
         cout << "1. Add Movie\n";
         cout << "2. Delete Movie\n";
         cout << "3. Show Movies\n";

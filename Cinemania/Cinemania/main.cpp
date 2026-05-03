@@ -11,11 +11,13 @@ int main() {
     int choice;
 
     while (true) {
-        cout << "\n==== START MENU ====\n";
-        cout << "1. Login (User)\n";
-        cout << "2. Register\n";
-        cout << "3. Admin Login\n";
-        cout << "4. Exit\n";
+        cout << "\n----- SIGN IN/UP -----\n";
+        cout << endl;
+        cout << "1) Login (User)\n";
+        cout << "2) Register\n";
+        cout << "3) Admin Login\n";
+        cout << "4) Exit\n";
+        cout << "----------------\n";
         cout << "Choose: ";
         cin >> choice;
 

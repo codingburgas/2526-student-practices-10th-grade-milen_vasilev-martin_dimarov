@@ -13,6 +13,7 @@ void showSnacks()
     cout << "3) Hot Dog\n";
     cout << "4) Chips\n";
     cout << "5) Chocolate\n";
+    cout << endl;
     cout << "0) Back\n";
     cout << "------------------\n";
 }

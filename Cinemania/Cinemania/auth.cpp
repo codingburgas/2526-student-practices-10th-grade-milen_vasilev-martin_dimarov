@@ -42,7 +42,7 @@ void saveUsers() {
 bool login() {
     string username, password;
 
-    cout << "==== USER LOGIN ====\n";
+    cout << "----- USER LOGIN -----\n";
     cout << "Username: ";
     cin >> username;
     cout << "Password: ";
@@ -63,7 +63,7 @@ bool login() {
 bool adminLogin() {
     string username, password;
 
-    cout << "==== ADMIN LOGIN ====\n";
+    cout << "----- ADMIN LOGIN -----\n";
     cout << "Username: ";
     cin >> username;
     cout << "Password: ";
@@ -82,7 +82,7 @@ bool adminLogin() {
 void registerUser() {
     string username, password;
 
-    cout << "==== REGISTER ====\n";
+    cout << "----- REGISTER -----\n";
     cout << "Username: ";
     cin >> username;
 
