@@ -4,8 +4,14 @@
 #include "offers.h"
 #include "snacks.h"
 
+using namespace std;
+
 void showMenu() {
-    std::cout << R"(
+
+    int num;
+
+    while (true) {
+        cout << R"(
  ________________________________________________________________________________________________________________
 |                                                                                                                |
 |                        _________ .__                                    .__                                    |
@@ -16,32 +22,54 @@ void showMenu() {
 |                                 \/        \/     \/      \/     \/     \/        \/                            |
 |                                                                                                                |
 |                                 ////// -PRESS 1 TO VIEW THE MOVIE LIST- \\\\\\\                                |
-|                                                                                                                |
-|                                  ////////// -PRESS 2 TO SEE OFFERS- \\\\\\\\\\                                 |
-|                                                                                                                |
-|                                 ////////// -PRESS 3 TO SEE THE SNACKS- \\\\\\\\\\                              |
-|                                                                                                                |
-|                                         //// -PRESS 0 TO ESCAPE- \\\\                                          |
-|                                                                                                                |
+|                                  ////// -PRESS 2 TO SEE OFFERS- \\\\\\\                                        |
+|                                 ////// -PRESS 3 TO SEE THE SNACKS- \\\\\\\                                     |
+|                                         //// -PRESS 0 TO LOGOUT- \\\\                                          |
 |________________________________________________________________________________________________________________|
 )";
+        cin >> num;
 
-    int num;
-    std::cin >> num;
+        if (num == 1) {
+            showMovies();
+        }
+        else if (num == 2) {
+            showOffers();
+        }
+        else if (num == 3) {
+            showSnacks();
+        }
+        else if (num == 0) {
+            cout << "Logging out...\n";
+            break; 
+        }
+        else {
+            cout << "Wrong input!\n";
+        }
+    }
+}
+void adminMenu() {
+    int choice;
 
-    if (num == 1) {
-        showMovies();
+    while (true) {
+        cout << "\n==== ADMIN MENU ====\n";
+        cout << "1. Add Movie\n";
+        cout << "2. Delete Movie\n";
+        cout << "3. Show Movies\n";
+        cout << "0. Logout\n";
+        cout << "Choose: ";
+        cin >> choice;
 
+        if (choice == 1) {
+            addMovie();
+        }
+        else if (choice == 2) {
+            deleteMovie();
+        }
+        else if (choice == 3) {
+            showMovies();
+        }
+        else if (choice == 0) {
+            break;
+        }
     }
-    else if (num == 2) {
-        showOffers();
-    }
-    else if (num == 3) {
-        showSnacks();
-    }
-    else{
-        std::cout << "Wrong input!";
-    }
-
- 
 }

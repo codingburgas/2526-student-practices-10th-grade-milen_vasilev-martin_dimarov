@@ -129,6 +129,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="auth.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="movies.cpp" />
@@ -136,6 +137,7 @@
     <ClCompile Include="snacks.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="auth.h" />
     <ClInclude Include="menu.h" />
     <ClInclude Include="movies.h" />
     <ClInclude Include="offers.h" />
