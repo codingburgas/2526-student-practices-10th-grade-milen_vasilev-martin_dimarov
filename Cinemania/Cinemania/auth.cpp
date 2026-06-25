@@ -31,20 +31,17 @@ void saveUsers() {
     ofstream file("users.txt");
 
     for (auto& u : users) {
-        file << u.username << " "
-            << u.password << " "
-            << u.admin << "\n";
+        file << u.username << " " << u.password << " " << u.admin << "\n";
     }
 
     file.close();
 }
-
 bool login() {
     string username, password;
 
-    cout << "----- USER LOGIN -----\n";
     cout << "Username: ";
     cin >> username;
+
     cout << "Password: ";
     cin >> password;
 
@@ -63,15 +60,15 @@ bool login() {
 bool adminLogin() {
     string username, password;
 
-    cout << "----- ADMIN LOGIN -----\n";
     cout << "Username: ";
     cin >> username;
+
     cout << "Password: ";
     cin >> password;
 
     if (username == "admin" && password == "admin123") {
-        cout << "Admin login successful!\n";
         isAdmin = true;
+        cout << "Admin login successful!\n";
         return true;
     }
 
@@ -82,9 +79,11 @@ bool adminLogin() {
 void registerUser() {
     string username, password;
 
-    cout << "----- REGISTER -----\n";
     cout << "Username: ";
     cin >> username;
+
+    cout << "Password: ";
+    cin >> password;
 
     for (auto& u : users) {
         if (u.username == username) {
@@ -93,12 +92,8 @@ void registerUser() {
         }
     }
 
-    cout << "Password: ";
-    cin >> password;
-
     users.push_back({ username, password, false });
-
-    saveUsers(); 
+    saveUsers();
 
     cout << "Registration successful!\n";
 }
