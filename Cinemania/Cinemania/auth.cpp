@@ -3,6 +3,7 @@
 #include <fstream>
 #include "auth.h"
 
+#include "static.h"
 using namespace std;
 
 bool isAdmin = false;
@@ -52,8 +53,14 @@ bool login() {
             return true;
         }
     }
+    clearScreen();
 
-    cout << "Wrong login!\n";
+    cout << "_____________. " << endl;
+    cout << "Wrong login! |" << endl;
+    cout << "-------------." << endl;
+    cout << endl;
+    cout << endl;
+
     return false;
 }
 
@@ -68,11 +75,23 @@ bool adminLogin() {
 
     if (username == "admin" && password == "admin123") {
         isAdmin = true;
-        cout << "Admin login successful!\n";
+        clearScreen();
+
+        cout << "________________________. " << endl;
+        cout << "Admin login successful! |"<< endl;
+        cout << "------------------------." << endl;
+
         return true;
     }
 
-    cout << "Wrong admin credentials!\n";
+    clearScreen();
+
+    cout << "_________________________. " << endl;
+    cout << "Wrong admin credentials! | " << endl;;
+    cout << "-------------------------. " << endl;
+    cout << endl;
+    cout << endl;
+
     return false;
 }
 
@@ -85,9 +104,15 @@ void registerUser() {
     cout << "Password: ";
     cin >> password;
 
-    for (auto& u : users) {
-        if (u.username == username) {
-            cout << "Username already taken!\n";
+    for(auto& u : users){
+        if(u.username == username){
+            clearScreen();
+
+            cout << "________________________. " << endl;
+            cout << "Username already taken! |" << endl;
+            cout << "------------------------." << endl;
+            cout << endl;
+            cout << endl;
             return;
         }
     }
@@ -95,5 +120,11 @@ void registerUser() {
     users.push_back({ username, password, false });
     saveUsers();
 
-    cout << "Registration successful!\n";
+    clearScreen();
+
+    cout << "_________________________. " << endl;
+    cout << "Registration successful! |" << endl;
+    cout << "-------------------------." << endl;
+    cout << endl;
+    cout << endl;
 }

@@ -32,10 +32,15 @@ void saveMovies() {
 
 void showMovies() {
     clearScreen();
+    cout << ".____ MOVIES ____." << endl;
+    cout << endl;
 
     for (int i = 0; i < movies.size(); i++) {
-        cout << i + 1 << ". " << movies[i] << "\n";
+        cout << i + 1 << ") " << movies[i] << endl;
     }
+
+    cout << endl;
+    cout << ".----------------." << endl;
 }
 
 void addMovie() {
@@ -48,7 +53,10 @@ void addMovie() {
     movies.push_back(name);
     saveMovies();
 
-    cout << "Movie added!\n";
+    clearScreen();
+    cout << "_____________. " << endl;
+    cout << "Movie added! |" << endl;
+    cout << "-------------." << endl;
 }
 
 void deleteMovie() {
@@ -56,22 +64,35 @@ void deleteMovie() {
 
     showMovies();
 
+    cout << endl;
     cout << "Enter movie number to delete: ";
     cin >> index;
 
     if (cin.fail()) {
         cin.clear();
         cin.ignore(1000, '\n');
-        cout << "Invalid input!\n";
+
+        clearScreen();
+        cout << "_______________. " << endl;
+        cout << "Invalid input! |" << endl;
+        cout << "---------------." << endl;
         return;
     }
 
     if (index > 0 && index <= movies.size()) {
         movies.erase(movies.begin() + index - 1);
         saveMovies();
-        cout << "Movie deleted!\n";
+
+        clearScreen();
+        cout << "_______________. " << endl;
+        cout << "Movie deleted! |" << endl;
+        cout << "---------------." << endl;
     }
     else {
-        cout << "Invalid number!\n";
+        
+        clearScreen();
+        cout << "________________. " << endl;
+        cout << "Invalid number! |" << endl;
+        cout << "----------------." << endl;
     }
 }

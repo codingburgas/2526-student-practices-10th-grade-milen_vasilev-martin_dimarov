@@ -6,9 +6,16 @@ using namespace std;
 void showSnacks() {
     clearScreen();
 
-    cout << "1) Popcorn\n";
-    cout << "2) Nachos\n";
-    cout << "3) Hot Dog\n";
-    cout << "4) Chips\n";
-    cout << "5) Chocolate\n";
+    cout << "._____ SNACK MENU _____." << endl;
+    cout << "|                      |" << endl;
+    cout << "|      1) Popcorn      |" << endl;
+    cout << "|      2) Nachos       |" << endl;
+    cout << "|      3) Hot Dog      |" << endl;
+    cout << "|      4) Chips        |" << endl;
+    cout << "|     5) Chocolate     |" << endl;
+    cout << "|                      |" << endl;
+    cout << ".----------------------." << endl;
+    cout << endl;
+    cout << endl;
+
 }

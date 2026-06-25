@@ -135,7 +135,6 @@
     <ClCompile Include="movies.cpp" />
     <ClCompile Include="offers.cpp" />
     <ClCompile Include="snacks.cpp" />
-    <ClCompile Include="static.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="auth.h" />
@@ -143,7 +142,6 @@
     <ClInclude Include="movies.h" />
     <ClInclude Include="offers.h" />
     <ClInclude Include="snacks.h" />
-    <ClInclude Include="static.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\StaticLib\StaticLib.vcxproj">
