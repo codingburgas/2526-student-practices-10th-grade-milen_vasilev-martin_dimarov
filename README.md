@@ -1,5 +1,7 @@
 # 2223-10: On the job training (OTJ) project
 
+LOG-utvaite se ot komputrite v daskalo
+
 # Movie Ticket booking system
 This document describes the OTJ project for 10th graders. **It will be updated frequently**.
 
